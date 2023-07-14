@@ -1,3 +1,3 @@
 interface ProcessadorPagamento {
-    fun processarPagamento()
+    fun processarPagamento(pagamento: Pagamento)
 }
