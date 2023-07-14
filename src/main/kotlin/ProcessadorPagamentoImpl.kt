@@ -8,8 +8,8 @@ class ProcessadorPagamentoImpl: ProcessadorPagamento {
            val data = pagamento.data.format(VerificaInputs.formatter)
            println("== NOTA FISCAL ==" +
                    "\nValor do pagamento: R$$valorPagamento"+
-                   "\nValor do desconto: R$$desconto" +
-                   "\nValor com desconto aplicado: R$$valorFinal" +
+                   "\nValor do desconto: R$%.2f".format(desconto) +
+                   "\nValor com desconto aplicado: R$%.2f".format(valorFinal) +
                    "\nData do pagamento $data")
        }
 
