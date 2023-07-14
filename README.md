@@ -22,6 +22,10 @@
 # CLASSE concreta ProcessadorPagamentoImpl 
 5º Em seguida foi a criada a classe ProcessadorPagamentoImpl tendo com instancia a inrface ProcessadorPagamento.
 
+# NA MAIN
+Está sendo instanciado main dois objetos:boleto e cartão do tipo Pagamento.Usamos o método processadorPagamento para gerar 
+uma nota fiscal com o resultado total do pagamento.
+
 # PACOTE UTILS
 É usado pra colocar a data no formato dia,mês e ano
 
