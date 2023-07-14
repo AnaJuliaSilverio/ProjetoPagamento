@@ -1,0 +1,3 @@
+interface ProcessadorPagamento {
+    fun processarPagamento()
+}
