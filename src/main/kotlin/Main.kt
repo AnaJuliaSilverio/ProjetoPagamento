@@ -6,11 +6,11 @@ fun main() {
     while (true) {
         try {
             val processador = ProcessadorPagamentoImpl()
-            println("Digite o valo do pagamento:")
+            println("Digite o valor do pagamento:")
             val valor = readln().toBigDecimal()
             println("Digite a data:")
             val data = LocalDate.parse(readln(), VerificaInputs.formatter)
-            println("Você deseja pagar por  1-Cartão ou 2-Boleto:")
+            println("Você deseja pagar por 1-Cartão ou 2-Boleto:")
             val opcao = readln()
 
             when (opcao) {
@@ -23,14 +23,14 @@ fun main() {
                 }
 
                 "2" -> {
-                    println("Qual o codigo de barras do boleto:")
+                    println("Qual o código de barras do boleto:")
                     val codigo = readln()
                     val boleto1 = PagamentoBoleto(valor, data, codigo)
                     processador.processarPagamento(boleto1)
 
                 }
 
-                else -> println("Opção invalida.")
+                else -> println("Opção inválida.")
             }
             println()
             println("Deseja realizar mais pagamentos?")
