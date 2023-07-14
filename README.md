@@ -1,9 +1,10 @@
-# ProjetoPagamento
+
 
 # Sistema de Pagamento 
 
 
-# CLASSE ABSTRATA Pagamento e MÉTODO calcularDesconto( )
+# CLASSE Abstrada Pagamento
+
 1° Foi criada a classe abstrata Pagamento com os parâmetros var valor tipo: BigDecimal e var data tipo:  String e o método abstrato calcularDesconto do tipo: BigDecimal
 
 
@@ -19,6 +20,10 @@
 4° Em seguida foi criada a interface ProcessadorPagamento com o método processarPagamento 
 
 # CLASSE concreta ProcessadorPagamentoImpl 
-5º Em seguida foi a criada a classe ProcessadorPagamentoImpl tendo com instancia a inrface ProcessadorPagamento. 
+5º Em seguida foi a criada a classe ProcessadorPagamentoImpl tendo com instancia a inrface ProcessadorPagamento.
+
+# PACOTE UTILS
+É usado pra colocar a data no formato dia,mês e ano
+
 
 
